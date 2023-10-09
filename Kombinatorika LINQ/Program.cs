@@ -28,7 +28,8 @@ namespace Kombinatorika_LINQ
                              where h != a && h != b && h != c && h != d && h != e && h != f && h != g
                              from i in Enumerable.Range(1, 9)
                              where i != a && i != b && i != c && i != d && i != e && i != f && i != g && i != h
-                             where (a * 10 + b) % 2 == 0 && (a * 100 + b * 10 + c) % 3 == 0 &&
+                             where (a * 10 + b) % 2 == 0 &&
+                                   (a * 100 + b * 10 + c) % 3 == 0 &&
                                    (a * 1000 + b * 100 + c * 10 + d) % 4 == 0 &&
                                    (a * 10000 + b * 1000 + c * 100 + d * 10 + e) % 5 == 0 &&
                                    (a * 100000 + b * 10000 + c * 1000 + d * 100 + e * 10 + f) % 6 == 0 &&
